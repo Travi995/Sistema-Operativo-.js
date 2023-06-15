@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "ecmel.vscode-html-css",
+        "wscats.html-snippets",
+        "visualstudioexptteam.vscodeintellicode",
+        "zignd.html-css-class-completion",
+        "ritwickdey.liveserver",
+        "xabikos.javascriptsnippets",
+        "christian-kohler.path-intellisense",
+        "sketchbuch.vsc-quokka-statusbar",
+        "wallabyjs.quokka-vscode"
+    ]
+}
