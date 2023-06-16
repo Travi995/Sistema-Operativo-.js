@@ -1,0 +1,71 @@
+body{
+    
+    height: 700px;
+}
+
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    background: url("./../images/PAFF_112718_touchmemory-1024x705-transformed.jpeg") no-repeat center/cover;
+    background-size: 100% 100%   ;
+}
+#compoCentral{
+    width: auto;
+    height: auto;
+    margin-bottom: 16%;
+    margin-left: 5%;
+}
+#imgSesion{
+    width:80px;
+    height: 80px;
+    border-radius: 60px;
+    padding: 5px;
+    border: 2px solid rgb(209, 22, 22);
+    
+}
+#imgSesion:hover{
+    border: 2px solid white;
+    cursor: pointer;
+    /* background: filter(rgba(160, 89, 89, 0.801)); */
+}
+
+#usuario{
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px white, 1px 1px 1px whitesmoke;
+    background-color: rgb(243, 236, 236);
+    border-radius: 10px;
+    transition: all 1s;
+}
+#usuario:hover{
+    background-color: rgb(49, 48, 48);
+    color: white;
+    text-shadow: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white, 2px 2px 2px white;
+}
+
+#formulario{
+    position: relative;
+    display: none;
+    flex: column;
+}
+#inputPassword{
+    position: relative;
+    
+    width: 100px;
+    height: 20px;
+    padding-left: 5px;
+    font-size: 15px ;
+    border-radius: 10px;
+    outline: none;
+    
+}
+#inputPassword:focus{
+    border: 2px dashed rgb(127, 80, 214);
+}
