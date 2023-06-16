@@ -69,3 +69,15 @@ body{
 #inputPassword:focus{
     border: 2px dashed rgb(127, 80, 214);
 }
+
+#enviar{
+    width: 100px;
+    height:30px;
+    border-radius:20px ;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    transition:all 500ms;
+}
+#enviar:hover{
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    color: white;
+}
