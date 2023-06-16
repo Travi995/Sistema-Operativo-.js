@@ -17,10 +17,12 @@ body{
 #compoCentral{
     width: auto;
     height: auto;
-    margin-bottom: 16%;
-    margin-left: 5%;
+    position: relative;
+    margin-bottom: 17%;
+    margin-left: 3.5%;
 }
 #imgSesion{
+    position: relative;
     width:80px;
     height: 80px;
     border-radius: 60px;
@@ -51,14 +53,14 @@ body{
 }
 
 #formulario{
-    position: relative;
+    position: absolute;
     display: none;
     flex: column;
 }
 #inputPassword{
     position: relative;
     
-    width: 100px;
+    width: 90px;
     height: 20px;
     padding-left: 5px;
     font-size: 15px ;
@@ -71,8 +73,10 @@ body{
 }
 
 #enviar{
-    width: 100px;
+    width: 60px;
     height:30px;
+    margin-top: 15px;
+    margin-left: 10px;
     border-radius:20px ;
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     transition:all 500ms;

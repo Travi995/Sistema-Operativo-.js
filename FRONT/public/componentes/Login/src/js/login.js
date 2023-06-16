@@ -5,7 +5,7 @@ const mostrarForm = () => {
     elementos.forEach(element => {
         element.addEventListener('click', () => {
             document.getElementById('formulario').style.display = 'block'
-            document.getElementById('imgSesion').style.marginLeft = '53px'
+            
         })   
     });
     
