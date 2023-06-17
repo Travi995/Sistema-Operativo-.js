@@ -1,0 +1,33 @@
+{
+  "name": "sistema-operativo-",
+  "version": "0.0.1",
+  "description": "Practica de Realizar un sistema operativo JATB, DTM",
+  "main": "undefined_for_the_moment",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node BACK/app.js",
+    "build": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travi995/Sistema-Operativo-.js.git"
+  },
+  "author": "Jose Antonio Travieso Buron & Deivis Torres Mena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Travi995/Sistema-Operativo-.js/issues"
+  },
+  "homepage": "https://github.com/Travi995/Sistema-Operativo-.js#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.2.3",
+    "sequelize": "^6.31.0",
+    "uuid": "^9.0.0"
+  }
+}
