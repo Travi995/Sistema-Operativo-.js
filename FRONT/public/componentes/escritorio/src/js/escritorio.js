@@ -19,6 +19,7 @@ const seleccion = () => {
 }
 
 // esta funcion recibe  como parametro un objeto literal con el icono y el texto
+//retorna el nuevo icono 
 const crearIcono = (arg) => {
     const clon = document.querySelector('.iconEscritorio').cloneNode(true)
     
@@ -27,6 +28,7 @@ const crearIcono = (arg) => {
         clon.querySelector('.iconText') =  arg.texto
     }catch(error){'no se pudo crear el elemento'}
 
+    return clon
 }
 
 
