@@ -4,8 +4,8 @@ const mostrarForm = () => {
     
     elementos.forEach(element => {
         element.addEventListener('click', () => {
-            document.getElementById('formulario').style.display = 'block'
-            
+            document.getElementById('formulario')  .style.display         = 'block'
+            document.getElementById('compoCentral').classList.add('show')
         })   
     });
     
