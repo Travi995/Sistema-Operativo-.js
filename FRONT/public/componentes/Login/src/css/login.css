@@ -16,7 +16,7 @@ html,body{
     justify-content: center;
     align-items: center;
     background-color: aqua;
-    background: url("./../images/PAFF_112718_touchmemory-1024x705-transformed.jpeg") no-repeat center/cover;
+    background: url("../images/PAFF_112718_touchmemory-1024x705-transformed.jpeg") no-repeat center/cover;
     background-size: 100% 100%  ;
 }
 

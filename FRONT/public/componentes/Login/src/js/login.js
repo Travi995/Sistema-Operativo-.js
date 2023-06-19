@@ -17,7 +17,7 @@ const mostrarForm = () => {
 
 
 
-window.onload = mostrarForm
+mostrarForm()
 
 
 
