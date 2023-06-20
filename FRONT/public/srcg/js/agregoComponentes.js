@@ -9,13 +9,16 @@ const cargarTemplate = async (url, idElement) => {
         const textoPagina   = await template.text()
         const parser        = new DOMParser();
         const elemento      = parser.parseFromString(textoPagina, 'text/html').getElementById(idElement);
+        const scriptReci    = elemento.querySelector('script')
+        const scriptAgregar = document.createElement('script')
         const elementoNuevo = document.createElement(elemento.tagName)
         
-        console.log(textoPagina)
-        console.log('hasta aki el texto pagina')
-        console.log(elemento)
-        console.log('hasta aki el elemento')
-        console.log(elementoNuevo)
+        
+        
+        
+        scriptAgregar.src = scriptReci.src
+        document.head.appendChild(scriptAgregar)
+        scriptReci.remove()
 
         elementoNuevo.innerHTML = elemento.outerHTML
         document.body.appendChild(elementoNuevo)
