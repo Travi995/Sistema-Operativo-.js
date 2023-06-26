@@ -8,28 +8,29 @@ const cargarTemplate = async (url, idElement) => {
         const template      = await fetch(url)
         const textoPagina   = await template.text()
         const parser        = new DOMParser();
-        const elemento      = parser.parseFromString(textoPagina, 'text/html').getElementById(idElement);
-        const scriptReci    = elemento.querySelector('script')
+        
+        
+        const elementoHtml  = parser.parseFromString(textoPagina, 'text/html').getElementById(idElement);
+        const scriptReci    = elementoHtml.querySelector('script')
+        const elementoCss   = elementoHtml.querySelector('link')
         const scriptAgregar = document.createElement('script')
-        const elementoNuevo = document.createElement(elemento.tagName)
-        
-        
-        
-        
+        const elementoNuevoHtml = document.createElement(elementoHtml.tagName)
+           
         scriptAgregar.src = scriptReci.src
+        
+        document.head.appendChild(elementoCss)
         document.head.appendChild(scriptAgregar)
         scriptReci.remove()
 
-        elementoNuevo.innerHTML = elemento.outerHTML
-        document.body.appendChild(elementoNuevo)
+        elementoNuevoHtml.innerHTML = elementoHtml.outerHTML
+        document.body.appendChild(elementoNuevoHtml)
         
         } catch (error) {
             console.log(error)
             }  
 }
 
-
 // ejemplode carga del login
 // 
 
-cargarTemplate('/public/componentes/Login/Login.html', 'login')
+window.onload = cargarTemplate('/public/componentes/Login/Login.html', 'login')
