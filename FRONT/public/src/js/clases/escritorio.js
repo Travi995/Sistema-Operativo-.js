@@ -1,9 +1,21 @@
 
 class escritorio {
     cosntructor(compoVisual) {
-        this.componentes = compoVisual
+        this.componente = compoVisual
         this.barra_tareas = ''//instancia de la clase barra de tareas
-        
+  
+    }
+
+    mostrarEscritorio() {
+        document.body.appendChild(this.componente)
+    }
+    
+    mostrarBarraTarea() {
+        this.componente.appendChild(this.barra_tareas)
+    }
+
+    agregarIcono(icono) {
+        this.componente.appendChild(icono)
         
     }
 
@@ -50,6 +62,14 @@ const construirElementosVisuales = (elemento) => {
                     if (element.class) {
                         div.classList.add(element.class)
                     }
+                    if (element.visibilidad) {
+                        div.style.zIndex = element.visibilidad
+                    }
+                    if (element.posicion) {
+                        div.style.position = element.posicion
+                    }
+
+
                     div.style.border = '2px dashed black'
                     componenteCompleto = div 
                     
@@ -111,7 +131,7 @@ const construirElementosVisuales = (elemento) => {
                     img.src = element.url  
                     img.style.width  = element.width
                     img.style.height = element.height
-                    img.style.zIndex = element.visibilidad
+                    
                     if (element.class) {
                         img.classList.add(element.class)
                     }
