@@ -16,44 +16,6 @@ html,body{
     background-size: 100% 100%;
 }
 
-/*Barra de tareas*/
-.barraTarea{
-    display: flex;
-    justify-content: space-between;
-    width:100vw;
-    height:40px;
-    bottom: 0;
-    background-color: rgb(37, 36, 36);
-    position: fixed;
-    margin-bottom: 2px;
-}
 
-.inicio{
-    
-    width:60px;
-    height:100vh;
-    margin-left: 3px;
-    padding: 1px;
-    border-right: 1px solid white;
-    transition: all 500ms;
-}
 
-.inicio:hover{
-    border-right: 1px dashed white;
-}
 
-.imgInicio{
-    width:45px;
-    height:35px;
-    /* border-radius: 100px; */
-    margin-top: 4px;
-    margin-left: 3px;
-
-    
-    transition:all 500ms;
-}
-
-.imgInicio:hover{
-    filter: drop-shadow(0 0 2px rgba(229, 233, 228, 0.921));
-    cursor:pointer;
-}

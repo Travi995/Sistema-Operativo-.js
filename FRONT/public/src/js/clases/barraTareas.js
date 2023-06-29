@@ -1,7 +1,8 @@
 
 class barraTareas {
     constructor() {
-        let barra     = HTMLDivElement
+        let barra = HTMLDivElement
+        let conjuntoIconos = HTMLDivElement
         
         
         
@@ -10,14 +11,15 @@ class barraTareas {
     }
 
     cargarCompoGraph() {
-        this.barra     = document.createElement('div')
-        
-        
-        
-        this.barra.classList.add   ( 'barraTarea')
-        
-                
+        this.barra = document.createElement('div')
+        this.conjuntoIconos = document.createElement('div')
+    
+        this.barra.classList.add('barraTarea')
+        this.conjuntoIconos.classList.add('conjuntoIconos')
+                    
         this.barra.appendChild(new btnInicio().btnInicio)
+        this.conjuntoIconos.appendChild(new iconoBT('./src/iconos/Desktop_folder_35272.ico').icono)
+        this.barra.appendChild(this.conjuntoIconos)
         document.body.appendChild(this.barra)
         
     }

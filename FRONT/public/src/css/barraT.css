@@ -1,0 +1,76 @@
+
+/*Barra de tareas*/
+.barraTarea{
+    display: flex;
+    
+    width:100vw;
+    height:45px;
+    bottom: 0;
+    background-color: rgb(37, 36, 36);
+    position: fixed;
+    margin-bottom: 2px;
+}
+
+.inicio{
+    
+    width:60px;
+    height:100vh;
+    margin-left: 3px;
+    padding: 1px;
+    border-right: 1px solid white;
+    transition: all 500ms;
+}
+
+.inicio:hover{
+    border-right: 1px dashed white;
+}
+
+.imgInicio{
+    width:45px;
+    height:35px;
+    margin-top: 4px;
+    margin-left: 3px;
+    transition:all 500ms;
+}
+
+.imgInicio:hover{
+    filter: drop-shadow(0 0 3px rgba(229, 233, 228, 0.921));
+    cursor:pointer;
+}
+
+.imgIcono{
+    width:45px;
+    height:35px;
+    transition: all 500ms;
+}
+.imgIcono:hover{
+    filter: drop-shadow(0 0 1px rgba(229, 233, 228, 0.921));
+    cursor:pointer;
+}
+
+/*icono  especializado para la barra de tarea*/
+.iconoBT{
+    width:  55px  !important;
+    height: 100vh !important;
+    margin: 1px;
+    padding-left: 7px;
+    padding-top: 3px;
+    
+    transition: all 500ms;
+}
+.iconoBT:hover{
+    cursor: pointer;
+    background-color: rgba(30, 29, 29, 0.629);
+    border: 0.5px solid rgb(44, 43, 43);
+}
+
+/*personalizacion de la barra de iconos de al lado del boton de inicio*/
+.conjuntoIconos{
+    display: flex;
+    width:  100vw;
+    height: 100vh;
+    
+    margin-left: 5px;
+}
+
+
