@@ -1,0 +1,12 @@
+
+.inicioDesplegable{
+    display: none;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    position: relative;
+    background-color: red;
+}
+.show{
+    display: block;
+}

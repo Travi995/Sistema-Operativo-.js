@@ -1,19 +1,21 @@
 
 class icono{
-    constructor(urlimagen,texto){
+    constructor(urlimagen, atributo,texto){
         let icono  = HTMLDivElement
         let imagen = HTMLImageElement
         let span  = HTMLSpanElement
-        this.cargarCompoGrafico(urlimagen,texto)
+        this.cargarCompoGrafico(urlimagen,atributo,texto)
     }
 
-    cargarCompoGrafico(urlimagen,texto) {
+    cargarCompoGrafico(urlimagen,atributo,texto) {
         this.icono  = document.createElement('div')
         this.imagen = document.createElement('img')
         this.span  = document.createElement('span')
         
-        this.imagen.src        = urlimagen
+        this.icono.setAttribute('iconId',atributo )
+        this.imagen.src = urlimagen
         this.span.textContent = texto
+
 
 
         this.icono.classList.add('icono')

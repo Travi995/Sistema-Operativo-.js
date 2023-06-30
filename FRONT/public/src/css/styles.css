@@ -14,6 +14,8 @@ html,body{
     background-color: rgb(128, 140, 140);
     background: url("./../imagenes/blue-abstract-background-with-bokeh-can-be-used-in-poster-banner-flyer-ans-website-free-vector-NosCqMhDPm-transformed.jpeg") no-repeat center/cover; 
     background-size: 100% 100%;
+    z-index: 1;
+    
 }
 
 
