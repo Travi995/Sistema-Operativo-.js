@@ -33,8 +33,8 @@ class barraTareas {
         
         if (item.tagName == 'IMG') item = item.parentNode
         
-
         switch (item.getAttribute('iconId')) {
+            
             case 'explorador':
                 alert('ha tocado el explorador de archivos')
                 break;

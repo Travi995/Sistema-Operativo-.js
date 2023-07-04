@@ -4,9 +4,11 @@ class btnInicio{
         let btnInicio   = HTMLDivElement
         let imgInicio   = HTMLImageElement
         let desplegable = HTMLDivElement
+        let iconoEqui   = HTMLDivElement
         this.cargarCompoGrafico()
         this.menuDesplegable()
-        this.cargarEvento()
+        this.cargarEventoDesplegable()
+        
     }
 
     cargarCompoGrafico() {
@@ -34,41 +36,61 @@ class btnInicio{
     
     cargarCompoDesplegable() {
         let head      = document.createElement('section')
-        let iconoEqui = document.createElement('div')
         let logo      = document.createElement('div')
+        this.iconoEqui     = document.createElement('div')
+        
 
         head.setAttribute('id', 'headDesplegable')
-        iconoEqui.appendChild(new iconoDesplegable('./src/iconos/desktop_icon-icons.com_66537.ico','Equipo','equipo').icono)        
+        this.iconoEqui.appendChild(new iconoDesplegable('./src/iconos/desktop_icon-icons.com_66537.ico','equipo','Equipo').icono)        
+        
+        
 
-        head.appendChild(iconoEqui)
-        miError =head
+        head.appendChild(this.iconoEqui)
+        
         this.desplegable.appendChild(head)
+        this.cargarEventos()
         
     }
 
-    cargarEvento() {
+    cargarEventoDesplegable() {
         let ejecutado = false
+        
         
         this.btnInicio.addEventListener('click', () => {
             
             if (ejecutado == false) {
                 this.desplegable.classList.add('show')
                 this.cargarCompoDesplegable()
+                
             }
             
             ejecutado = true
+    
+        })
 
-            this.desplegable.addEventListener('click', (arg) => {
-                this.manejadorEventos(arg)
-            })
+    }
+
+    cargarEventos() {
+        this.iconoEqui.addEventListener('click', (arg) => {
+            this.manejadorEventos(arg)
         })
     }
 
-   
-
-    
+     
     manejadorEventos(arg){
+        let item = arg.target
         
+        
+        if (item.tagName == 'IMG')       item = item.parentNode
+        else if (item.tagName == 'SPAN') item = item.parentNode
+
+        
+        
+        switch (item.getAttribute('iconId')) {
+            case 'equipo':
+                alert('ha tocado el boton de equipo')
+                break;
+        }
         
     }
 
