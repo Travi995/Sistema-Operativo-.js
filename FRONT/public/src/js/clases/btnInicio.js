@@ -1,4 +1,4 @@
-
+let miError = ''
 class btnInicio{
     constructor() {
         let btnInicio   = HTMLDivElement
@@ -6,6 +6,7 @@ class btnInicio{
         let desplegable = HTMLDivElement
         this.cargarCompoGrafico()
         this.menuDesplegable()
+        this.cargarEvento()
     }
 
     cargarCompoGrafico() {
@@ -30,9 +31,46 @@ class btnInicio{
         this.btnInicio.appendChild(this.desplegable)
         
     }
+    
+    cargarCompoDesplegable() {
+        let head      = document.createElement('section')
+        let iconoEqui = document.createElement('div')
+        let logo      = document.createElement('div')
+
+        head.setAttribute('id', 'headDesplegable')
+        iconoEqui.appendChild(new iconoDesplegable('./src/iconos/desktop_icon-icons.com_66537.ico','Equipo','equipo').icono)        
+
+        head.appendChild(iconoEqui)
+        miError =head
+        this.desplegable.appendChild(head)
+        
+    }
+
+    cargarEvento() {
+        let ejecutado = false
+        
+        this.btnInicio.addEventListener('click', () => {
+            
+            if (ejecutado == false) {
+                this.desplegable.classList.add('show')
+                this.cargarCompoDesplegable()
+            }
+            
+            ejecutado = true
+
+            this.desplegable.addEventListener('click', (arg) => {
+                this.manejadorEventos(arg)
+            })
+        })
+    }
 
    
+
     
+    manejadorEventos(arg){
+        
+        
+    }
 
 
 }
