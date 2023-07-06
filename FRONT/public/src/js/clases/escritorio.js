@@ -15,7 +15,8 @@ class desktop{
     }
 
     cargarEventos() {
-        console.log('algo')
+        
+        
     }
 
 

@@ -11,5 +11,8 @@ class sistemaOperativo {
       new desktop()  
       new barraTareas()
         
-    }
+  } 
+  
+
+
 }

@@ -3,7 +3,7 @@
     display: none;
     width: 400px;
     height: 500px;
-    z-index: 2;
+    z-index: 3;
     background-color: rgba(52, 50, 50, 0.879);
     position: absolute;
     top: 0;

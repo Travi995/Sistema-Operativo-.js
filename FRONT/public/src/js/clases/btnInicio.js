@@ -28,6 +28,7 @@ class btnInicio{
 
     menuDesplegable() {
         this.desplegable = document.createElement('div')
+        this.desplegable.setAttribute('tabindex','0')
 
         this.desplegable.classList.add('inicioDesplegable')
         this.btnInicio.appendChild(this.desplegable)
@@ -61,11 +62,17 @@ class btnInicio{
             if (ejecutado == false) {
                 this.desplegable.classList.add('show')
                 this.cargarCompoDesplegable()
-                
+                ejecutado = true
+                return
             }
             
-            ejecutado = true
-    
+            
+            this.desplegable.style.display ='flex'
+        })
+
+        this.desplegable.addEventListener('blur', () => {
+            this.desplegable.style.display ='none'
+            
         })
 
     }
@@ -74,6 +81,8 @@ class btnInicio{
         this.iconoEqui.addEventListener('click', (arg) => {
             this.manejadorEventos(arg)
         })
+
+
     }
 
      
@@ -87,8 +96,8 @@ class btnInicio{
         
         
         switch (item.getAttribute('iconId')) {
-            case 'equipo':
-                alert('ha tocado el boton de equipo')
+            case 'Equipo':
+                document.getElementById('escritorio').appendChild(new ventana().ventana)
                 break;
         }
         
@@ -96,3 +105,5 @@ class btnInicio{
 
 
 }
+
+
