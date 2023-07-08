@@ -34,7 +34,10 @@ class ventana {
 
     cargarEventos() {
         let botonesVentana = this.head.children
-        
+        let posIniX 
+        let posIniY
+        let posFinX
+        let posFinY
 
 
         botonesVentana = Array.from(botonesVentana[0].children)
@@ -46,11 +49,6 @@ class ventana {
         });
 
         /*drag and drop de la ventana*/
-        let posIniX 
-        let posIniY
-        let posFinX
-        let posFinY
-
         this.ventana.addEventListener('dragstart', (event) => {
             
             posIniX = event.offsetX
@@ -77,9 +75,6 @@ class ventana {
         })
 
 
-
-
-
     }
 
     manejarEventos(arg) {
@@ -102,8 +97,6 @@ class ventana {
             case 'cerrar':
                 this.ventana.remove()
                 break;
-
-
 
 
         }
