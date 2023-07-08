@@ -1,7 +1,7 @@
 
 .ventana{
-    width: 50vw;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(100, 105, 103);
     z-index: 2;
     position: absolute;

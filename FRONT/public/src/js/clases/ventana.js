@@ -64,23 +64,13 @@ class ventana {
         })
         this.ventana.addEventListener('dragend', (event) => {
             event.preventDefault()
-
-            console.log('dragend terminado')
            
             posFinX = event.clientX
             posFinY = event.clientY
             
             let coordenadaX = posFinX - posIniX
             let coordenadaY = posFinY - posIniY
-            if (coordenadaX < 0 ) {
-                coordenadaX = coordenadaX* -1
-            }else if (coordenadaY < 0 ) {
-                coordenadaY = coordenadaY* -1
-            }
-            console.log(event)
-            console.log(coordenadaX)
-            console.log(coordenadaY)
-
+            
             this.ventana.style.left = `${coordenadaX}px`;
             this.ventana.style.top = `${coordenadaY}px` ;
 
