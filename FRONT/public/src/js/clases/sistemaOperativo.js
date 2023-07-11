@@ -10,6 +10,7 @@ class sistemaOperativo {
     constructor() {
       new desktop()  
       new barraTareas()
+      // let datosServer  = entradaDatos()
         
   } 
   

@@ -97,7 +97,7 @@ class btnInicio{
         
         switch (item.getAttribute('iconId')) {
             case 'Equipo':
-                document.getElementById('escritorio').appendChild(new ventana().ventana)
+                document.getElementById('escritorio').appendChild(new ventanaExploradorArchivos().ventana)
                 break;
         }
         

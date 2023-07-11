@@ -26,6 +26,8 @@ class barraTareas {
         this.barra.addEventListener('click', (arg) => {
             this.manejarEventos(arg)
         })
+        
+
     }
 
     manejarEventos(arg) {

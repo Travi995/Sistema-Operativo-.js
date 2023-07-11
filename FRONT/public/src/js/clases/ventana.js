@@ -53,6 +53,8 @@ class ventana {
             
             posIniX = event.offsetX
             posIniY = event.offsetY
+            
+            document.getElementsByClassName('barraTarea')[0].classList.add('transparente')
                   
         })
 
@@ -70,7 +72,8 @@ class ventana {
             let coordenadaY = posFinY - posIniY
             
             this.ventana.style.left = `${coordenadaX}px`;
-            this.ventana.style.top = `${coordenadaY}px` ;
+            this.ventana.style.top = `${coordenadaY}px`;
+            document.getElementsByClassName('barraTarea')[0].classList.remove('transparente')
 
         })
 
