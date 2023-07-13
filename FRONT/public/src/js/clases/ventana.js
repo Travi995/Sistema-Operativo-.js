@@ -1,5 +1,4 @@
-let errorVentana = ''
-let dragTerminado = ''
+
 
 class ventana {
     constructor() {

@@ -26,3 +26,9 @@ class iconoHeadVentana extends icono{
 }
 
 
+class iconExploradorArchivo extends icono{
+    constructor(urlimagen, atributo, texto = '') {
+        super(urlimagen, atributo, texto)
+        this.icono.classList.add('iconExplorer')
+    }
+}

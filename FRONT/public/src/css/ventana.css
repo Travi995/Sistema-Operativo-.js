@@ -71,9 +71,26 @@
 .cuerpoVentana{
     width: 100%;
     height: auto;
+    display: flex;
 }
 
 .transparente{
     background-color: transparent !important;
     border: 2px solid rgba(37, 36, 36, 0.849);;
+}
+
+.iconExplorer{
+    width: 100px;
+    height: 80px;
+}
+
+.showDirectorio{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.seleccionado{
+    background-color: rgba(47, 47, 216, 0.776);
+    box-shadow: 2px 2px 2px rgba(161, 161, 233, 0.892);
 }
